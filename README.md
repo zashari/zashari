@@ -4,10 +4,8 @@ _AI Engineer at [GDP Labs](https://www.gdplabs.id/)_ <img src="https://raw.githu
 _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="25" height="25" />
 
 <br><br>
+## About Me <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Detective%20Medium-Light%20Skin%20Tone.png" alt="Detective Medium-Light Skin Tone" width="25" height="25" />
 ```python
-Python, R, Javascript, HTML, CSS, Java, Scala = "Python", "R", "Javascript", "HTML", "CSS", "Java", "Scala"
-AWS, GCP, Azure, MongoDB, MySQL, Docker = "AWS", "GCP", "Azure", "MongoDB", "MySQL", "Docker"
-
 zaky = {
     "Pronouns": ["he", "him"],
     "code": [Python, R, Javascript, HTML, CSS, Java, Scala],
