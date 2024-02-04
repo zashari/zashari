@@ -30,7 +30,7 @@ zaky = {
     <img alt="LinkedIn" src="https://img.shields.io/static/v1?label=&message=zaky ashari&color=0077B5&style=flat-square&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:izzat.zaky@gmail.com">
-    <img alt="Email" src="https://img.shields.io/static/v1?label=&message=izzat.zaky&color=D14836&style=flat-square&logo=gmail&logoColor=white" />
+    <img alt="Email" src="https://img.shields.io/static/v1?label=&message=izzat.zaky@gmail.com&color=D14836&style=flat-square&logo=gmail&logoColor=white" />
   </a>
   <a href="http://www.zashari.me">
     <img alt="Website" src="https://img.shields.io/static/v1?label=&message=zashari.me&color=4285F4&style=flat-square&logo=google-chrome&logoColor=white" />
