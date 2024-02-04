@@ -15,7 +15,7 @@ zaky = {
     "code": [Python, R, Javascript, HTML, CSS, Java, Scala],
     "Technologies": [AWS, GCP, Azure, MongoDB, MySQL, Docker],
     "Hobbies": {
-        "Music": ["Classical", "Pop", "RnB", "Jazz", "Rock", "Old Songs"],
+        "Music": ["Classical", "Indie","Pop", "RnB", "Jazz", "Rock", "Old Songs"],
         "Movies": ["Sci-fi", "Comedy", "Action", "Adventures", "Documentary"],
         "Nature": ["Beach", "Sunset"]
     },
