@@ -15,11 +15,12 @@ zaky = {
     "code": [Python, R, Javascript, HTML, CSS, Java, Scala],
     "Technologies": [AWS, GCP, Azure, MongoDB, MySQL, Docker],
     "Hobbies": {
-        "Music": ["Classical", "Indie","Pop", "RnB", "Jazz", "Rock", "Old Songs"],
-        "Movies": ["Sci-fi", "Comedy", "Action", "Adventures", "Documentary"],
-        "Nature": ["Beach", "Sunset"]
-    },
-    "Current Focus": "Learning to Improve my Skill"
+                "Music": ["Classical", "Indie","Pop", "RnB", "Jazz", "Rock", "Old Songs"],
+                "Movies": ["Sci-fi", "Comedy", "Action", "Adventures", "Documentary"],
+                "Nature": ["Beach", "Sunset"]
+                },
+
+    "Current Focus": "Currently Working on Image Caption Generator Project"
 }
 ```
 <p align="left">
