@@ -4,7 +4,7 @@ _AI Engineer at [GDP Labs](https://www.gdplabs.id/)_ <img src="https://raw.githu
 _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="25" height="25" />
 
 <br><br>
-```
+```python
 zaky = {
     "Pronouns": ["he", "him"],
     "code": ["Python", "R", "Javascript", "HTML", "CSS", "Java", "Scala"],
