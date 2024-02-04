@@ -24,16 +24,16 @@ zaky = {
 ```
 <p align="left">
   <a href="https://www.instagram.com/a.zakyashari">
-    <img alt="a.zakyashari" src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" />
+    <img alt="Instagram" src="https://img.shields.io/static/v1?label=&message=a.zakyashari&color=E4405F&style=flat-square&logo=instagram&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/">
-    <img alt="zaky ashari" src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/static/v1?label=&message=zaky-ashari-81143b217&color=0077B5&style=flat-square&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:izzat.zaky@gmail.com">
-    <img alt="izzat.zaky@gmail.com" src="https://img.shields.io/badge/-Email-D14836?style=flat-square&logo=gmail&logoColor=white" />
+    <img alt="Email" src="https://img.shields.io/static/v1?label=&message=izzat.zaky&color=D14836&style=flat-square&logo=gmail&logoColor=white" />
   </a>
   <a href="http://www.zashari.me">
-    <img alt="zashari.me" src="https://img.shields.io/badge/-Website-4285F4?style=flat-square&logo=google-chrome&logoColor=white" />
+    <img alt="Website" src="https://img.shields.io/static/v1?label=&message=zashari.me&color=4285F4&style=flat-square&logo=google-chrome&logoColor=white" />
   </a>
 </p>
 
