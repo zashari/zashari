@@ -4,7 +4,7 @@ _AI Engineer at [GDP Labs](https://www.gdplabs.id/)_ <img src="https://raw.githu
 _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Eyes.png" alt="Eyes" width="25" height="25" />
 
 
-<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Fox.png" alt="Fox" width="500" height="500" align="right" />
+<img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Animals/Fox.png" alt="Fox" width="200" height="200" align="right" />
 
 <br><br>
 ## About Me <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Detective%20Medium-Light%20Skin%20Tone.png" alt="Detective Medium-Light Skin Tone" width="25" height="25" />
