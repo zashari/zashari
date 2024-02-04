@@ -11,7 +11,7 @@ _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-I
 ## About Me <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/People%20with%20professions/Detective%20Medium-Light%20Skin%20Tone.png" alt="Detective Medium-Light Skin Tone" width="25" height="25" />
 ```python
 zaky = {
-    "Pronouns": ["he", "him"],
+    "Pronouns": "he" | "him",
     "code": [Python, R, Javascript, HTML, CSS, Java, Scala],
     "Technologies": [AWS, GCP, Azure, MongoDB, MySQL, Docker],
     "Hobbies": {
