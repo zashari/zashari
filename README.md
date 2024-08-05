@@ -20,7 +20,7 @@ zaky = {
                 "Nature": ["Beach", "Sunset"]
                 },
 
-    "Current Focus": "Currently Working on 'Image Caption Generator' Project"
+    "Current Focus": 
 }
 ```
 <p align="left">
