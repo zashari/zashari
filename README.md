@@ -26,7 +26,7 @@ zaky = {
     <img alt="Instagram" src="https://img.shields.io/static/v1?label=&message=a.zakyashari&color=E4405F&style=flat-square&logo=instagram&logoColor=white" />
   </a>
   <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/">
-    <img alt="LinkedIn" src="https://img.shields.io/static/v1?label=&message=zaky ashari&color=0077B5&style=flat-square&logo=linkedin&logoColor=white" />
+    <img alt="LinkedIn" src="https://img.shields.io/static/v1?label=&message=zaky%20ashari&color=0077B5&style=flat-square&logo=linkedin&logoColor=white" />
   </a>
   <a href="mailto:izzat.zaky@gmail.com">
     <img alt="Email" src="https://img.shields.io/static/v1?label=&message=izzat.zaky@gmail.com&color=D14836&style=flat-square&logo=gmail&logoColor=white" />
