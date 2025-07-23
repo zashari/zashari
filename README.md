@@ -31,8 +31,5 @@ _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-I
   <a href="mailto:izzat.zaky@gmail.com">
     <img alt="Email" src="https://img.shields.io/static/v1?label=&message=izzat.zaky@gmail.com&color=D14836&style=flat-square&logo=gmail&logoColor=white" />
   </a>
-  <a href="http://www.zashari.me">
-    <img alt="Website" src="https://img.shields.io/static/v1?label=&message=zashari.me&color=4285F4&style=flat-square&logo=google-chrome&logoColor=white" />
-  </a>
 </p>
 
