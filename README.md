@@ -18,7 +18,7 @@ _Freelance Data Scientist_ <img src="https://raw.githubusercontent.com/Tarikul-I
      "Nature": ["Beach", "Sunset"]
    },
 
-   "Current Focus": "Cooking Something... 👀💻"
+   "Current Focus": "Cooking Something... 👀"
  }
 ```
 <p align="left">
