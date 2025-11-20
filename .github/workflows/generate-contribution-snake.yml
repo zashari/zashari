@@ -5,6 +5,11 @@ on:
     # Runs every day at 00:00 UTC
     - cron: '0 0 * * *'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/generate-contribution-snake.yml'
 
 jobs:
   generate:
@@ -17,17 +22,20 @@ jobs:
 
       - name: Generate GitHub Contribution Snake
         uses: Platane/snk@v3
+        id: snk_generator
         with:
           github_user_name: zashari
           outputs: |
             output/github-snake.svg
             output/github-snake-dark.svg?color_snake=#5DD4F8&color_dots=#000000
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Push the generated image
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add output/github-snake.svg output/github-snake-dark.svg
+          git add output/
           git commit -m "Generate contribution snake" || exit 0
           git push
 
