@@ -29,7 +29,7 @@
   </a>
 </p>
 
-## 📊 GitHub Contribution Snake
+## My GitHub Contributions the Last 365 Days
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zashari/zashari/output/github-snake-dark.svg" />
