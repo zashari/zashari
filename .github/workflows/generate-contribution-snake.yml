@@ -26,8 +26,8 @@ jobs:
         with:
           github_user_name: zashari
           outputs: |
-            output/github-snake.svg
-            output/github-snake-dark.svg?color_snake=#5DD4F8&color_dots=#000000
+            output/github-contribution-grid-snake.svg
+            output/github-contribution-grid-snake-dark.svg?color_snake=#5DD4F8&color_dots=#000000
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
