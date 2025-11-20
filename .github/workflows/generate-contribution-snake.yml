@@ -1,0 +1,33 @@
+name: Generate Contribution Snake
+
+on:
+  schedule:
+    # Runs every day at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate GitHub Contribution Snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: zashari
+          outputs: |
+            output/github-snake.svg
+            output/github-snake-dark.svg?color_snake=#5DD4F8&color_dots=#000000
+
+      - name: Push the generated image
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add output/github-snake.svg output/github-snake-dark.svg
+          git commit -m "Generate contribution snake" || exit 0
+          git push
+
