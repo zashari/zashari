@@ -61,26 +61,20 @@ jobs:
           python3 << EOF
           import re
           import os
-          
+
           count = os.environ.get('COUNT', '0')
-          
+
           with open('README.md', 'r') as f:
               content = f.read()
-          
-          # Extract the number from inside the comment and place it before the comment (visible)
-          # Pattern: comment with number inside
-          pattern = r'<!-- CONTRIBUTIONS_COUNT -->(\d+)<!-- /CONTRIBUTIONS_COUNT -->'
-          
-          # Replace: put the new count BEFORE the comment (visible) and keep the comment with count inside
-          replacement = f'{count} <!-- CONTRIBUTIONS_COUNT -->{count}<!-- /CONTRIBUTIONS_COUNT -->'
+
+          # Pattern: matches the HTML comment with any number inside
+          # We only keep the number inside the comment, not before it
+          pattern = r'<!-- CONTRIBUTIONS_COUNT -->\d+<!-- /CONTRIBUTIONS_COUNT -->'
+
+          # Replace: update only the number inside the comment
+          replacement = f'<!-- CONTRIBUTIONS_COUNT -->{count}<!-- /CONTRIBUTIONS_COUNT -->'
           content = re.sub(pattern, replacement, content, count=1)
-          
-          # Cleanup: if there's already a number before the comment, remove duplicates
-          # Match: number + space + number + space + comment, replace with single number + comment
-          cleanup_pattern = r'(\d+)\s+\1\s+<!-- CONTRIBUTIONS_COUNT -->'
-          cleanup_replacement = r'\1 <!-- CONTRIBUTIONS_COUNT -->'
-          content = re.sub(cleanup_pattern, cleanup_replacement, content)
-          
+
           with open('README.md', 'w') as f:
               f.write(content)
           EOF
