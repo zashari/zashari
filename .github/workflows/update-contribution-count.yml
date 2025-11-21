@@ -67,11 +67,19 @@ jobs:
           with open('README.md', 'r') as f:
               content = f.read()
           
-          # Replace both the visible number and the number in comments
-          # Pattern matches: visible number, optional space, comment start, number in comment, comment end
-          pattern = r'\d+\s*<!-- CONTRIBUTIONS_COUNT -->\d+<!-- /CONTRIBUTIONS_COUNT -->'
+          # Extract the number from inside the comment and place it before the comment (visible)
+          # Pattern: comment with number inside
+          pattern = r'<!-- CONTRIBUTIONS_COUNT -->(\d+)<!-- /CONTRIBUTIONS_COUNT -->'
+          
+          # Replace: put the new count BEFORE the comment (visible) and keep the comment with count inside
           replacement = f'{count} <!-- CONTRIBUTIONS_COUNT -->{count}<!-- /CONTRIBUTIONS_COUNT -->'
           content = re.sub(pattern, replacement, content, count=1)
+          
+          # Cleanup: if there's already a number before the comment, remove duplicates
+          # Match: number + space + number + space + comment, replace with single number + comment
+          cleanup_pattern = r'(\d+)\s+\1\s+<!-- CONTRIBUTIONS_COUNT -->'
+          cleanup_replacement = r'\1 <!-- CONTRIBUTIONS_COUNT -->'
+          content = re.sub(cleanup_pattern, cleanup_replacement, content)
           
           with open('README.md', 'w') as f:
               f.write(content)
