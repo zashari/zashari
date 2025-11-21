@@ -67,11 +67,11 @@ jobs:
           with open('README.md', 'r') as f:
               content = f.read()
           
-          # Replace both the visible number and the one in comments
-          # Pattern matches: number followed by comment with number inside
-          pattern = r'\d+<!-- CONTRIBUTIONS_COUNT_START -->\d+<!-- CONTRIBUTIONS_COUNT_END -->'
-          replacement = f'{count}<!-- CONTRIBUTIONS_COUNT_START -->{count}<!-- CONTRIBUTIONS_COUNT_END -->'
-          content = re.sub(pattern, replacement, content)
+          # Replace both the visible number and the number in comments
+          # Pattern matches: visible number, optional space, comment start, number in comment, comment end
+          pattern = r'\d+\s*<!-- CONTRIBUTIONS_COUNT -->\d+<!-- /CONTRIBUTIONS_COUNT -->'
+          replacement = f'{count} <!-- CONTRIBUTIONS_COUNT -->{count}<!-- /CONTRIBUTIONS_COUNT -->'
+          content = re.sub(pattern, replacement, content, count=1)
           
           with open('README.md', 'w') as f:
               f.write(content)
