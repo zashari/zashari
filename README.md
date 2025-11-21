@@ -29,7 +29,7 @@
   </a>
 </p>
 
-## This year, I have made 180<!-- CONTRIBUTIONS_COUNT_START -->180<!-- CONTRIBUTIONS_COUNT_END --> contributions and I'm still going
+## This year, I have made 620<!-- CONTRIBUTIONS_COUNT_START -->620<!-- CONTRIBUTIONS_COUNT_END --> contributions and I'm still going
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zashari/zashari/output/github-snake-dark.svg" />
