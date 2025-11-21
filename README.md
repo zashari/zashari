@@ -29,7 +29,7 @@
   </a>
 </p>
 
-## My GitHub Contributions the Last 365 Days
+## This year, I have made 0<!-- CONTRIBUTIONS_COUNT_START -->0<!-- CONTRIBUTIONS_COUNT_END --> contributions and I'm still going
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zashari/zashari/output/github-snake-dark.svg" />

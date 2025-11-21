@@ -1,0 +1,96 @@
+name: Update Contribution Count
+
+on:
+  schedule:
+    # Runs daily at 1:00 AM UTC (after snake generation)
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/update-contribution-count.yml'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get current year contribution count
+        id: get_contributions
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const query = `
+              query($username: String!, $from: DateTime!, $to: DateTime!) {
+                user(login: $username) {
+                  contributionsCollection(from: $from, to: $to) {
+                    totalCommitContributions
+                    totalIssueContributions
+                    totalPullRequestContributions
+                    totalPullRequestReviewContributions
+                    totalRepositoryContributions
+                  }
+                }
+              }
+            `;
+            
+            const now = new Date();
+            const currentYear = now.getFullYear();
+            const from = new Date(currentYear, 0, 1).toISOString();
+            const to = now.toISOString();
+            
+            const variables = {
+              username: 'zashari',
+              from: from,
+              to: to
+            };
+            
+            const response = await github.graphql(query, variables);
+            const contributions = response.user.contributionsCollection;
+            
+            const totalContributions = 
+              contributions.totalCommitContributions +
+              contributions.totalIssueContributions +
+              contributions.totalPullRequestContributions +
+              contributions.totalPullRequestReviewContributions +
+              contributions.totalRepositoryContributions;
+            
+            core.setOutput('count', totalContributions);
+            console.log(`Total contributions this year: ${totalContributions}`);
+
+      - name: Update README with contribution count
+        run: |
+          COUNT="${{ steps.get_contributions.outputs.count }}"
+          python3 << EOF
+          import re
+          import os
+          
+          count = os.environ.get('COUNT', '0')
+          
+          with open('README.md', 'r') as f:
+              content = f.read()
+          
+          # Replace both the visible number and the one in comments
+          # Pattern matches: number followed by comment with number inside
+          pattern = r'\d+<!-- CONTRIBUTIONS_COUNT_START -->\d+<!-- CONTRIBUTIONS_COUNT_END -->'
+          replacement = f'{count}<!-- CONTRIBUTIONS_COUNT_START -->{count}<!-- CONTRIBUTIONS_COUNT_END -->'
+          content = re.sub(pattern, replacement, content)
+          
+          with open('README.md', 'w') as f:
+              f.write(content)
+          EOF
+        env:
+          COUNT: ${{ steps.get_contributions.outputs.count }}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git diff --quiet README.md || git add README.md && git commit -m "Update contribution count [skip ci]" && git push
+
