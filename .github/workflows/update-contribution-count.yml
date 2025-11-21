@@ -30,19 +30,17 @@ jobs:
               query($username: String!, $from: DateTime!, $to: DateTime!) {
                 user(login: $username) {
                   contributionsCollection(from: $from, to: $to) {
-                    totalCommitContributions
-                    totalIssueContributions
-                    totalPullRequestContributions
-                    totalPullRequestReviewContributions
-                    totalRepositoryContributions
+                    contributionCalendar {
+                      totalContributions
+                    }
                   }
                 }
               }
             `;
             
             const now = new Date();
-            const currentYear = now.getFullYear();
-            const from = new Date(currentYear, 0, 1).toISOString();
+            // Get contributions from the last 365 days (matching GitHub's "last year")
+            const from = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000).toISOString();
             const to = now.toISOString();
             
             const variables = {
@@ -52,14 +50,7 @@ jobs:
             };
             
             const response = await github.graphql(query, variables);
-            const contributions = response.user.contributionsCollection;
-            
-            const totalContributions = 
-              contributions.totalCommitContributions +
-              contributions.totalIssueContributions +
-              contributions.totalPullRequestContributions +
-              contributions.totalPullRequestReviewContributions +
-              contributions.totalRepositoryContributions;
+            const totalContributions = response.user.contributionsCollection.contributionCalendar.totalContributions;
             
             core.setOutput('count', totalContributions);
             console.log(`Total contributions this year: ${totalContributions}`);
