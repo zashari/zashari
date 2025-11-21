@@ -26,34 +26,73 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const query = `
+            // Try two approaches to get the most accurate count
+
+            // First query: without date parameters (uses GitHub's default "last year" calculation)
+            const queryDefault = `
+              query($username: String!) {
+                user(login: $username) {
+                  contributionsCollection {
+                    contributionCalendar {
+                      totalContributions
+                    }
+                    restrictedContributionsCount
+                  }
+                }
+              }
+            `;
+
+            // Second query: with explicit date range
+            const queryWithDates = `
               query($username: String!, $from: DateTime!, $to: DateTime!) {
                 user(login: $username) {
                   contributionsCollection(from: $from, to: $to) {
                     contributionCalendar {
                       totalContributions
                     }
+                    restrictedContributionsCount
+                    totalCommitContributions
+                    totalIssueContributions
+                    totalPullRequestContributions
+                    totalPullRequestReviewContributions
                   }
                 }
               }
             `;
-            
+
+            // Query 1: Use GitHub's default calculation (no dates)
+            console.log('Fetching contributions using GitHub default calculation...');
+            const responseDefault = await github.graphql(queryDefault, { username: 'zashari' });
+            const defaultCount = responseDefault.user.contributionsCollection.contributionCalendar.totalContributions;
+            console.log(`Default calculation (no dates): ${defaultCount} contributions`);
+
+            // Query 2: Calculate with explicit 365-day range
             const now = new Date();
-            // Get contributions from the last 365 days (matching GitHub's "last year")
-            const from = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000).toISOString();
-            const to = now.toISOString();
-            
+            const from = new Date(now.getTime() - 365 * 24 * 60 * 60 * 1000);
+
             const variables = {
               username: 'zashari',
-              from: from,
-              to: to
+              from: from.toISOString(),
+              to: now.toISOString()
             };
-            
-            const response = await github.graphql(query, variables);
-            const totalContributions = response.user.contributionsCollection.contributionCalendar.totalContributions;
-            
-            core.setOutput('count', totalContributions);
-            console.log(`Total contributions this year: ${totalContributions}`);
+
+            console.log(`Fetching contributions from ${from.toISOString()} to ${now.toISOString()}`);
+            const responseWithDates = await github.graphql(queryWithDates, variables);
+            const collection = responseWithDates.user.contributionsCollection;
+            const explicitCount = collection.contributionCalendar.totalContributions;
+
+            console.log(`Explicit 365-day range: ${explicitCount} contributions`);
+            console.log(`Restricted contributions: ${collection.restrictedContributionsCount}`);
+            console.log(`Commit contributions: ${collection.totalCommitContributions}`);
+            console.log(`Issue contributions: ${collection.totalIssueContributions}`);
+            console.log(`PR contributions: ${collection.totalPullRequestContributions}`);
+            console.log(`PR Review contributions: ${collection.totalPullRequestReviewContributions}`);
+
+            // Use the higher count (more likely to match what's shown on profile)
+            const finalCount = Math.max(defaultCount, explicitCount);
+            console.log(`Using final count: ${finalCount}`);
+
+            core.setOutput('count', finalCount);
 
       - name: Update README with contribution count
         run: |
