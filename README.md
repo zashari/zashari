@@ -29,33 +29,6 @@
   </a>
 </p>
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-| Metric | Value |
-|:---:|:---:|
-| **Total Contributions** | 858 |
-| **Total Commits** | 664 |
-| **Total Pull Requests** | 76 |
-| **Total Stars Earned** | 0 |
-| **Total Forks** | 0 |
-| **Repository Views** | 187 |
-| **Lines of Code Changed** | 190.1K |
-| **Lines Added** | 153.8K |
-| **Lines Deleted** | 36.0K |
-| **Open Issues** | 1 |
-| **Closed Issues** | 18 |
-
-### 🎯 Top Languages
-
-![Python](https://img.shields.io/badge/Python-3572A5?style=flat-square&logo=python&logoColor=white) ![Shell](https://img.shields.io/badge/Shell-89e051?style=flat-square&logo=shell&logoColor=white) ![Batchfile](https://img.shields.io/badge/Batchfile-C1F12E?style=flat-square&logo=batchfile&logoColor=white) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter Notebook-DA5B0B?style=flat-square&logo=jupyter notebook&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=flat-square&logo=typescript&logoColor=white)
-
-*Last updated: 2025-11-23 12:12:08 UTC*
-
-</div>
-
-
 ## These are my contributions over the last 365 days, and I'm still going
 
 <picture>
