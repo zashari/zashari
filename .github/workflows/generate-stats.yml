@@ -29,10 +29,7 @@ jobs:
       - name: Collect GitHub Stats
         uses: LukeHagar/stats-action@main
         env:
-          # Note: If GITHUB_TOKEN doesn't have sufficient permissions,
-          # create a Personal Access Token (PAT) with repo and user:email scopes
-          # and add it as ACCESS_TOKEN secret, then use: GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Update README with Stats
         run: |
