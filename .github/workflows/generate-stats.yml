@@ -18,7 +18,7 @@ permissions:
 jobs:
   Collect-GitHub-Stats:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     concurrency:
       group: stats-concurrency
       cancel-in-progress: true
