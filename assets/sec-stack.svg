@@ -4,6 +4,10 @@
     <clipPath id="cs">
       <rect x="0" y="0" width="960" height="308" rx="10" />
     </clipPath>
+    <style><![CDATA[
+      .cur { animation: blks 1.1s steps(1) infinite; }
+      @keyframes blks { 50% { opacity: 0; } }
+    ]]></style>
   </defs>
 
   <g clip-path="url(#cs)">
@@ -61,7 +65,7 @@
 
   <!-- trailing prompt with blinking cursor (tspan-positioned so it always follows the prompt text) -->
   <text x="24" y="290" xml:space="preserve" font-family="'JetBrains Mono','Fira Code','SF Mono','Menlo','Consolas',monospace" font-size="14">
-    <tspan fill="#ff8c42">~/stack</tspan><tspan fill="#6e7681"> &#10095; </tspan><tspan fill="#ff8c42">&#9608;<animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/></tspan>
+    <tspan fill="#ff8c42">~/stack</tspan><tspan fill="#6e7681"> &#10095; </tspan><tspan class="cur" fill="#ff8c42">&#9608;</tspan>
   </text>
 
   <!-- outer border -->
