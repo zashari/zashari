@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
-"""Generate animated particle ZASHARI banner — orange palette, chunky 7x9 font."""
+"""Generate animated particle ZASHARI banner.
+
+Design:
+  - chunky 7x9 letter font
+  - each lit cell is rendered as a 2x2 sub-grid of identically-sized
+    particles, so when formed the text is a tidy high-resolution dot
+    matrix (no jittered messiness)
+  - particles scatter to random offsets when dispersed, then re-form
+    on a 6s loop with a 3s hold in the formed state
+"""
 import random
 import math
 import sys
 
-# Chunky 7-wide x 9-tall pixel font.  '1' = lit cell, '0' = empty.
+# 7-wide x 9-tall chunky pixel font.  '1' = lit cell.
 LETTERS = {
     'Z': [
         "1111111",
@@ -75,25 +84,30 @@ LETTERS = {
 }
 
 WORD = "ZASHARI"
-PX = 10              # pixel cell size
-GAP = 14             # gap between letters (~1.4 cells)
+PX = 6                   # cell size (smaller -> tighter letters)
+SUB = 2                  # 2x2 sub-grid per cell -> 4 dots per lit cell
+GAP = 8                  # gap between letters
 LETTER_W = 7 * PX
 LETTER_H = 9 * PX
-PAD = 120            # canvas padding so dispersed particles have room
+PAD = 90                 # canvas padding for scattered particles
+RADIUS = 1.2             # uniform dot radius
 
 total_letters_w = len(WORD) * LETTER_W + (len(WORD) - 1) * GAP
 svg_w = total_letters_w + 2 * PAD
 svg_h = LETTER_H + 2 * PAD
 
-random.seed(11)
+random.seed(17)
 
-# Orange palette — main + warm accents.  Weighted so the bright orange dominates.
-PALETTE = (
-    ['#ff8c42'] * 70 +   # primary warm orange
-    ['#ffb86c'] * 18 +   # lighter peach
-    ['#ff6b35'] * 8  +   # deeper red-orange highlight
-    ['#fde68a'] * 4      # rare cream sparkle
-)
+# Even sub-grid positions inside a PX-sized cell, anchored at cell top-left.
+sub_step = PX / SUB
+sub_offsets = [
+    (sub_step * (s + 0.5), sub_step * (t + 0.5))
+    for s in range(SUB) for t in range(SUB)
+]
+
+# Two colors only - mostly primary, sparse brighter highlight - sizes stay uniform.
+PRIMARY = "#ff8c42"
+HIGHLIGHT = "#ffb86c"
 
 particles = []
 for li, ch in enumerate(WORD):
@@ -102,26 +116,18 @@ for li, ch in enumerate(WORD):
     for r, row in enumerate(bmp):
         for c, val in enumerate(row):
             if val == "1":
-                # Center of the lit cell
-                cx = base_x + c * PX + PX / 2
-                cy = PAD + r * PX + PX / 2
-                # Multiple particles per cell to give the strokes weight
-                # Main particle + 1-2 jitter satellites
-                for k in range(2):
-                    jx = random.uniform(-PX * 0.35, PX * 0.35)
-                    jy = random.uniform(-PX * 0.35, PX * 0.35)
-                    fx = cx + jx
-                    fy = cy + jy
-                    # Scattered offset: random direction + randomized distance
+                cell_x = base_x + c * PX
+                cell_y = PAD + r * PX
+                for (ox, oy) in sub_offsets:
+                    fx = cell_x + ox
+                    fy = cell_y + oy
                     angle = random.uniform(0, 2 * math.pi)
-                    dist = random.uniform(140, 320)
+                    dist = random.uniform(110, 240)
                     dx = math.cos(angle) * dist
                     dy = math.sin(angle) * dist
-                    # Slight per-particle delay for organic feel
-                    delay = round(random.uniform(0, 0.28), 3)
-                    radius = round(random.uniform(2.2, 4.2), 2)
-                    color = random.choice(PALETTE)
-                    particles.append((fx, fy, dx, dy, delay, radius, color))
+                    delay = round(random.uniform(0, 0.22), 3)
+                    color = HIGHLIGHT if random.random() < 0.12 else PRIMARY
+                    particles.append((fx, fy, dx, dy, delay, color))
 
 style = """
 <defs>
@@ -131,10 +137,10 @@ style = """
       will-change: transform, opacity;
     }
     @keyframes cyc {
-      0%   { transform: translate(var(--dx), var(--dy)); opacity: 0.15; }
+      0%   { transform: translate(var(--dx), var(--dy)); opacity: 0.12; }
       22%  { transform: translate(0, 0);                 opacity: 1;    }
       72%  { transform: translate(0, 0);                 opacity: 1;    }
-      100% { transform: translate(var(--dx), var(--dy)); opacity: 0.15; }
+      100% { transform: translate(var(--dx), var(--dy)); opacity: 0.12; }
     }
   ]]></style>
 </defs>
@@ -146,9 +152,9 @@ parts = [
     style,
 ]
 
-for fx, fy, dx, dy, delay, r, color in particles:
+for fx, fy, dx, dy, delay, color in particles:
     parts.append(
-        f'<circle class="p" cx="{fx:.1f}" cy="{fy:.1f}" r="{r}" fill="{color}" '
+        f'<circle class="p" cx="{fx:.2f}" cy="{fy:.2f}" r="{RADIUS}" fill="{color}" '
         f'style="--dx:{dx:.1f}px;--dy:{dy:.1f}px;animation-delay:{delay}s" />'
     )
 

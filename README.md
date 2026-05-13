@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/zashari-banner.svg" alt="ZASHARI" width="100%" />
+<img src="./assets/zashari-banner.svg" alt="ZASHARI" width="520" />
 
 <img src="./assets/terminal.svg" alt="zashari@dev ~ whoami → AI Engineer · Software Engineer · Software Architect · Full-Stack Developer" />
 
