@@ -40,6 +40,18 @@ focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
 └──────────────────────────────────────────────────────────────┘
 ```
 
+<img src="./assets/h-website.svg" alt="~/website ❯ curl -I zashari.website" width="100%" />
+
+<a href="https://zashari.website" title="visit zashari.website">
+  <img src="./assets/website-frame.svg" alt="zashari.website" width="100%" />
+</a>
+
+<p align="right">
+  <a href="https://zashari.website">
+    <img alt="visit website" src="https://img.shields.io/badge/visit_zashari.website-_→-ff8c42?style=for-the-badge&labelColor=0a0a0a" />
+  </a>
+</p>
+
 <img src="./assets/h-connect.svg" alt="~/connect ❯ ssh me@zashari" width="100%" />
 
 <p align="left">
