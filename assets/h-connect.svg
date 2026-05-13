@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 44" width="720" height="44" role="img" aria-label="section: connect">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 36" width="880" height="36" role="img" aria-label="section: connect">
   <defs>
     <style><![CDATA[
-      .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Menlo','Consolas',monospace; font-size: 15px; }
-      .bg     { fill: #0d1117; }
-      .border { fill: none; stroke: #21262d; stroke-width: 1; }
-      .prompt { fill: #7ee787; }
-      .text   { fill: #c9d1d9; }
-      .dim    { fill: #6e7681; }
-      .accent { fill: #79c0ff; }
-      .magenta { fill: #d2a8ff; }
+      .mono   { font-family: 'JetBrains Mono','Fira Code','SF Mono','Menlo','Consolas',monospace; font-size: 15px; font-weight: 500; }
+      .prompt { fill: #ff8c42; }
+      .text   { fill: #9ca3af; }
+      .dim    { fill: #6b7280; }
+      .accent { fill: #60a5fa; }
+      .magenta { fill: #c084fc; }
     ]]></style>
   </defs>
-  <rect class="bg"     x="0.5" y="0.5" width="719" height="43" rx="6" />
-  <rect class="border" x="0.5" y="0.5" width="719" height="43" rx="6" />
-  <text class="mono" x="18" y="28">
+  <text class="mono" x="0" y="20">
     <tspan class="prompt">zashari@dev</tspan><tspan class="dim">:</tspan><tspan class="accent">~/connect</tspan><tspan class="dim"> ❯ </tspan><tspan class="text">ssh </tspan><tspan class="magenta">me@zashari</tspan>
   </text>
-  <text class="mono dim" x="702" y="28" text-anchor="end">// let&apos;s talk</text>
+  <text class="mono dim" x="880" y="20" text-anchor="end">// let&apos;s talk</text>
+  <line x1="0" y1="32" x2="880" y2="32" stroke="#ff8c42" stroke-opacity="0.35" stroke-width="1" />
+  <line x1="0" y1="32" x2="120" y2="32" stroke="#ff8c42" stroke-opacity="0.85" stroke-width="1" />
 </svg>
