@@ -40,41 +40,6 @@ focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
 └──────────────────────────────────────────────────────────────┘
 ```
 
-<img src="./assets/h-now.svg" alt="~/now ❯ tail -f timeline.log" width="100%" />
-
-```
-[ 2025·09 ]  ●  Full-Stack Software Engineer  ·  marketbetter.ai
-                1,500+ commits  ·  ~480 PRs  ·  7 repos  ·  8 months
-                shipped 8+ flagship modules at startup velocity
-
-[ 2025·03 ]  ●  Software Architect  ·  Ashari Tech
-                co-architecting asharicloud-genapi (OpenAI-compatible
-                LLM gateway in Go) + multi-tenant platform infra
-
-[ 2024·02 ]  ◐  ML Engineer Intern  ·  GDP Labs  (completed 2025·02)
-                production fraud-detection pipeline  ·  89% recall
-                exceeded the 80% benchmark for a major ID bank
-```
-
-<img src="./assets/h-projects.svg" alt="~/projects ❯ tree -L 1" width="100%" />
-
-```
-alzheimer-detection     multi-modal deep learning on MRI
-                        (2D + 3D + radiomic feature fusion)
-
-brainybuddy             Indonesian AI companion · Telegram + LINE
-                        Bun + Elysia.js + MongoDB + Supabase
-
-asharicloud-genapi      OpenAI-compatible LLM gateway in Go
-                        multi-vendor routing · Docker Swarm
-
-leukemia-classifier     CNN + YOLO on blood-cell images
-                        dual-channel feature fusion · ALL detection
-
-deepfake-research       CNN + LSTM and Capsule Networks
-                        face-aligned preprocessing · 90% accuracy
-```
-
 <img src="./assets/h-connect.svg" alt="~/connect ❯ ssh me@zashari" width="100%" />
 
 <p align="left">
