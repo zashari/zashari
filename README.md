@@ -82,14 +82,6 @@ deepfake-research       CNN + LSTM and Capsule Networks
                         face-aligned preprocessing · 90% accuracy
 ```
 
-### `~/` &nbsp;stats
-
-```
-github  ·  contributions (365d)   <!-- CONTRIBUTIONS_COUNT -->2620<!-- /CONTRIBUTIONS_COUNT -->+
-marketbetter.ai · merged PRs     ~480
-gdp labs · fraud-detection recall   89%
-```
-
 ### `~/` &nbsp;connect
 
 <p align="left">
