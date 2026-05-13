@@ -14,19 +14,19 @@
   <img src="./assets/website-frame.svg" alt="zashari.website — visit live site" width="100%" />
 </a>
 
-<img src="./assets/sec-connect.svg" alt="zashari@dev — connect" width="100%" />
+<br/>
+<br/>
 
-<p align="left">
-  <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/" target="_blank" rel="noopener noreferrer">
-    <img alt="linkedin" src="https://img.shields.io/badge/linkedin-zaky_ashari-0a0a0a?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0a0a0a" />
-  </a>
-  <a href="https://github.com/zashari" target="_blank" rel="noopener noreferrer">
-    <img alt="github" src="https://img.shields.io/badge/github-zashari-0a0a0a?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0a" />
-  </a>
-  <a href="mailto:izzat.zaky@gmail.com">
-    <img alt="email" src="https://img.shields.io/badge/mail-izzat.zaky%40gmail.com-0a0a0a?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0a0a0a" />
-  </a>
-  <a href="https://www.instagram.com/a.zakyashari" target="_blank" rel="noopener noreferrer">
-    <img alt="instagram" src="https://img.shields.io/badge/instagram-a.zakyashari-0a0a0a?style=for-the-badge&logo=instagram&logoColor=white&labelColor=0a0a0a" />
-  </a>
-</p>
+<pre>
+<font color="#ff5f57">●</font> <font color="#febc2e">●</font> <font color="#28c840">●</font>                            <font color="#6e7681">zashari@dev — connect</font>                            <font color="#6e7681">// let's talk</font>
+─────────────────────────────────────────────────────────────────────────────────────────
+
+<font color="#ff8c42">~/connect</font> <font color="#6e7681">❯</font> ssh <font color="#c084fc">me@zashari</font>
+
+  <font color="#facc15">linkedin</font>    <font color="#6e7681">:</font>  <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/">zaky_ashari</a>
+  <font color="#facc15">github</font>      <font color="#6e7681">:</font>  <a href="https://github.com/zashari">zashari</a>
+  <font color="#facc15">email</font>       <font color="#6e7681">:</font>  <a href="mailto:izzat.zaky@gmail.com">izzat.zaky@gmail.com</a>
+  <font color="#facc15">instagram</font>   <font color="#6e7681">:</font>  <a href="https://www.instagram.com/a.zakyashari">a.zakyashari</a>
+
+<font color="#ff8c42">~/connect</font> <font color="#6e7681">❯</font> <font color="#ff8c42">█</font>
+</pre>
