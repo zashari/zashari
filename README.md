@@ -17,16 +17,14 @@
 <br/>
 <br/>
 
-<pre>
-<font color="#ff5f57">●</font> <font color="#febc2e">●</font> <font color="#28c840">●</font>                            <font color="#6e7681">zashari@dev — connect</font>                            <font color="#6e7681">// let's talk</font>
-─────────────────────────────────────────────────────────────────────────────────────────
+<img src="./assets/sec-connect.svg" alt="zashari@dev — connect" width="100%" />
 
-<font color="#ff8c42">~/connect</font> <font color="#6e7681">❯</font> ssh <font color="#c084fc">me@zashari</font>
-
-  <font color="#facc15">linkedin</font>    <font color="#6e7681">:</font>  <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/">zaky_ashari</a>
-  <font color="#facc15">github</font>      <font color="#6e7681">:</font>  <a href="https://github.com/zashari">zashari</a>
-  <font color="#facc15">email</font>       <font color="#6e7681">:</font>  <a href="mailto:izzat.zaky@gmail.com">izzat.zaky@gmail.com</a>
-  <font color="#facc15">instagram</font>   <font color="#6e7681">:</font>  <a href="https://www.instagram.com/a.zakyashari">a.zakyashari</a>
-
-<font color="#ff8c42">~/connect</font> <font color="#6e7681">❯</font> <font color="#ff8c42">█</font>
-</pre>
+<p align="left">
+  &nbsp;&nbsp;<a href="https://www.linkedin.com/in/zaky-ashari-81143b217/" target="_blank" rel="noopener noreferrer"><b>linkedin</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/zashari" target="_blank" rel="noopener noreferrer"><b>github</b></a>
+  &nbsp;·&nbsp;
+  <a href="mailto:izzat.zaky@gmail.com"><b>email</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://www.instagram.com/a.zakyashari" target="_blank" rel="noopener noreferrer"><b>instagram</b></a>
+</p>
