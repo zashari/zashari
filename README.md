@@ -1,13 +1,6 @@
 <div align="center">
 
-```
-███████╗ █████╗ ███████╗██╗  ██╗ █████╗ ██████╗ ██╗
-╚══███╔╝██╔══██╗██╔════╝██║  ██║██╔══██╗██╔══██╗██║
-  ███╔╝ ███████║███████╗███████║███████║██████╔╝██║
- ███╔╝  ██╔══██║╚════██║██╔══██║██╔══██║██╔══██╗██║
-███████╗██║  ██║███████║██║  ██║██║  ██║██║  ██║██║
-╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝
-```
+<img src="./assets/zashari-banner.svg" alt="ZASHARI" width="100%" />
 
 <img src="./assets/terminal.svg" alt="zashari@dev ~ whoami → AI Engineer · Software Engineer · Software Architect · Full-Stack Developer" />
 
@@ -15,7 +8,7 @@
 
 ---
 
-### `~/` &nbsp;whoami
+<img src="./assets/h-whoami.svg" alt="~/whoami ❯ cat about.txt" width="100%" />
 
 ```yaml
 name      : Andi Izzat Zaky Ashari
@@ -27,7 +20,7 @@ education : B.Sc. Computer Science, BINUS University (2021 – 2025)
 focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
 ```
 
-### `~/` &nbsp;stack
+<img src="./assets/h-stack.svg" alt="~/stack ❯ ls --grouped" width="100%" />
 
 ```
 ┌─ languages ──────────────────────────────────────────────────┐
@@ -47,7 +40,7 @@ focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
 └──────────────────────────────────────────────────────────────┘
 ```
 
-### `~/` &nbsp;now
+<img src="./assets/h-now.svg" alt="~/now ❯ tail -f timeline.log" width="100%" />
 
 ```
 [ 2025·09 ]  ●  Full-Stack Software Engineer  ·  marketbetter.ai
@@ -63,7 +56,7 @@ focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
                 exceeded the 80% benchmark for a major ID bank
 ```
 
-### `~/` &nbsp;projects
+<img src="./assets/h-projects.svg" alt="~/projects ❯ tree -L 1" width="100%" />
 
 ```
 alzheimer-detection     multi-modal deep learning on MRI
@@ -82,7 +75,7 @@ deepfake-research       CNN + LSTM and Capsule Networks
                         face-aligned preprocessing · 90% accuracy
 ```
 
-### `~/` &nbsp;connect
+<img src="./assets/h-connect.svg" alt="~/connect ❯ ssh me@zashari" width="100%" />
 
 <p align="left">
   <a href="https://www.linkedin.com/in/zaky-ashari-81143b217/">

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 684 264" width="100%" preserveAspectRatio="xMidYMid meet" role="img" aria-label="ZASHARI">
+
+<defs>
+  <style><![CDATA[
+    .p {
+      fill: #7ee787;
+      animation: cyc 6s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+      will-change: transform, opacity;
+    }
+    @keyframes cyc {
+      0%   { transform: translate(var(--dx), var(--dy)); opacity: 0.18; }
+      22%  { transform: translate(0, 0);                 opacity: 1;    }
+      72%  { transform: translate(0, 0);                 opacity: 1;    }
+      100% { transform: translate(var(--dx), var(--dy)); opacity: 0.18; }
+    }
+    /* glow particles get a deeper hue for variety */
+    .g  { fill: #58a6ff; }
+  ]]></style>
+</defs>
+
+<circle class="p g" cx="96.0" cy="96.0" r="1.67" style="--dx:-59.3px;--dy:118.6px;animation-delay:0.163s" />
+<circle class="p" cx="108.0" cy="96.0" r="2.11" style="--dx:-160.7px;--dy:-36.9px;animation-delay:0.014s" />
+<circle class="p" cx="120.0" cy="96.0" r="1.69" style="--dx:170.2px;--dy:40.9px;animation-delay:0.017s" />
+<circle class="p" cx="132.0" cy="96.0" r="1.82" style="--dx:-208.2px;--dy:106.9px;animation-delay:0.031s" />
+<circle class="p" cx="144.0" cy="96.0" r="2.0" style="--dx:-175.6px;--dy:-181.0px;animation-delay:0.144s" />
+<circle class="p" cx="144.0" cy="108.0" r="1.89" style="--dx:115.7px;--dy:-17.4px;animation-delay:0.215s" />
+<circle class="p" cx="132.0" cy="120.0" r="2.42" style="--dx:78.7px;--dy:100.5px;animation-delay:0.077s" />
+<circle class="p" cx="120.0" cy="132.0" r="1.97" style="--dx:83.2px;--dy:178.8px;animation-delay:0.16s" />
+<circle class="p" cx="108.0" cy="144.0" r="1.81" style="--dx:-114.1px;--dy:-35.3px;animation-delay:0.015s" />
+<circle class="p" cx="96.0" cy="156.0" r="2.19" style="--dx:-73.7px;--dy:-157.8px;animation-delay:0.079s" />
+<circle class="p" cx="96.0" cy="168.0" r="2.3" style="--dx:-148.3px;--dy:44.9px;animation-delay:0.199s" />
+<circle class="p g" cx="108.0" cy="168.0" r="2.48" style="--dx:7.3px;--dy:196.0px;animation-delay:0.131s" />
+<circle class="p" cx="120.0" cy="168.0" r="1.72" style="--dx:-19.7px;--dy:-151.9px;animation-delay:0.245s" />
+<circle class="p" cx="132.0" cy="168.0" r="2.09" style="--dx:-194.6px;--dy:110.0px;animation-delay:0.038s" />
+<circle class="p" cx="144.0" cy="168.0" r="2.17" style="--dx:203.9px;--dy:51.3px;animation-delay:0.191s" />
+<circle class="p" cx="182.0" cy="96.0" r="2.19" style="--dx:111.4px;--dy:-110.7px;animation-delay:0.174s" />
+<circle class="p" cx="194.0" cy="96.0" r="2.54" style="--dx:-156.4px;--dy:-85.9px;animation-delay:0.21s" />
+<circle class="p" cx="206.0" cy="96.0" r="2.3" style="--dx:-206.9px;--dy:34.0px;animation-delay:0.015s" />
+<circle class="p" cx="170.0" cy="108.0" r="1.88" style="--dx:-156.0px;--dy:-206.7px;animation-delay:0.205s" />
+<circle class="p" cx="218.0" cy="108.0" r="2.06" style="--dx:-158.4px;--dy:138.3px;animation-delay:0.006s" />
+<circle class="p" cx="170.0" cy="120.0" r="2.37" style="--dx:62.8px;--dy:111.0px;animation-delay:0.015s" />
+<circle class="p" cx="218.0" cy="120.0" r="2.47" style="--dx:101.2px;--dy:106.8px;animation-delay:0.098s" />
+<circle class="p g" cx="170.0" cy="132.0" r="2.48" style="--dx:155.1px;--dy:86.0px;animation-delay:0.137s" />
+<circle class="p" cx="182.0" cy="132.0" r="2.02" style="--dx:101.0px;--dy:-217.3px;animation-delay:0.07s" />
+<circle class="p" cx="194.0" cy="132.0" r="1.75" style="--dx:-153.2px;--dy:188.1px;animation-delay:0.239s" />
+<circle class="p" cx="206.0" cy="132.0" r="2.08" style="--dx:64.7px;--dy:129.5px;animation-delay:0.058s" />
+<circle class="p" cx="218.0" cy="132.0" r="2.02" style="--dx:-126.6px;--dy:-79.4px;animation-delay:0.001s" />
+<circle class="p" cx="170.0" cy="144.0" r="2.29" style="--dx:-132.8px;--dy:142.7px;animation-delay:0.238s" />
+<circle class="p" cx="218.0" cy="144.0" r="1.65" style="--dx:-201.7px;--dy:-19.7px;animation-delay:0.169s" />
+<circle class="p" cx="170.0" cy="156.0" r="2.4" style="--dx:183.3px;--dy:-134.0px;animation-delay:0.219s" />
+<circle class="p" cx="218.0" cy="156.0" r="2.23" style="--dx:-132.5px;--dy:106.3px;animation-delay:0.026s" />
+<circle class="p" cx="170.0" cy="168.0" r="1.76" style="--dx:111.0px;--dy:45.8px;animation-delay:0.052s" />
+<circle class="p" cx="218.0" cy="168.0" r="1.75" style="--dx:-63.2px;--dy:99.5px;animation-delay:0.0s" />
+<circle class="p g" cx="256.0" cy="96.0" r="2.47" style="--dx:132.2px;--dy:97.9px;animation-delay:0.006s" />
+<circle class="p" cx="268.0" cy="96.0" r="1.95" style="--dx:-99.7px;--dy:-86.9px;animation-delay:0.063s" />
+<circle class="p" cx="280.0" cy="96.0" r="2.59" style="--dx:-84.4px;--dy:96.8px;animation-delay:0.212s" />
+<circle class="p" cx="292.0" cy="96.0" r="1.7" style="--dx:-178.4px;--dy:38.7px;animation-delay:0.021s" />
+<circle class="p" cx="244.0" cy="108.0" r="1.76" style="--dx:-82.3px;--dy:125.1px;animation-delay:0.207s" />
+<circle class="p" cx="244.0" cy="120.0" r="1.75" style="--dx:250.0px;--dy:36.5px;animation-delay:0.132s" />
+<circle class="p" cx="256.0" cy="132.0" r="2.58" style="--dx:-109.9px;--dy:-30.6px;animation-delay:0.132s" />
+<circle class="p" cx="268.0" cy="132.0" r="1.97" style="--dx:140.1px;--dy:-162.3px;animation-delay:0.065s" />
+<circle class="p" cx="280.0" cy="132.0" r="2.38" style="--dx:112.4px;--dy:195.8px;animation-delay:0.133s" />
+<circle class="p" cx="292.0" cy="144.0" r="2.58" style="--dx:-68.8px;--dy:125.9px;animation-delay:0.203s" />
+<circle class="p" cx="292.0" cy="156.0" r="2.34" style="--dx:138.8px;--dy:-184.5px;animation-delay:0.205s" />
+<circle class="p g" cx="244.0" cy="168.0" r="1.63" style="--dx:27.3px;--dy:185.6px;animation-delay:0.089s" />
+<circle class="p" cx="256.0" cy="168.0" r="2.29" style="--dx:149.6px;--dy:26.5px;animation-delay:0.065s" />
+<circle class="p" cx="268.0" cy="168.0" r="2.59" style="--dx:170.5px;--dy:-47.8px;animation-delay:0.234s" />
+<circle class="p" cx="280.0" cy="168.0" r="1.83" style="--dx:158.2px;--dy:-45.9px;animation-delay:0.055s" />
+<circle class="p" cx="318.0" cy="96.0" r="2.5" style="--dx:46.2px;--dy:132.8px;animation-delay:0.156s" />
+<circle class="p" cx="366.0" cy="96.0" r="2.4" style="--dx:97.9px;--dy:-153.3px;animation-delay:0.163s" />
+<circle class="p" cx="318.0" cy="108.0" r="2.38" style="--dx:180.1px;--dy:106.2px;animation-delay:0.227s" />
+<circle class="p" cx="366.0" cy="108.0" r="2.39" style="--dx:0.2px;--dy:-181.7px;animation-delay:0.045s" />
+<circle class="p" cx="318.0" cy="120.0" r="2.0" style="--dx:-114.0px;--dy:199.9px;animation-delay:0.243s" />
+<circle class="p" cx="366.0" cy="120.0" r="1.77" style="--dx:-205.2px;--dy:146.4px;animation-delay:0.181s" />
+<circle class="p" cx="318.0" cy="132.0" r="2.41" style="--dx:92.6px;--dy:95.0px;animation-delay:0.226s" />
+<circle class="p g" cx="330.0" cy="132.0" r="2.26" style="--dx:142.0px;--dy:185.9px;animation-delay:0.245s" />
+<circle class="p" cx="342.0" cy="132.0" r="1.61" style="--dx:-113.4px;--dy:155.3px;animation-delay:0.033s" />
+<circle class="p" cx="354.0" cy="132.0" r="2.53" style="--dx:204.0px;--dy:-37.7px;animation-delay:0.132s" />
+<circle class="p" cx="366.0" cy="132.0" r="1.81" style="--dx:-220.2px;--dy:97.3px;animation-delay:0.207s" />
+<circle class="p" cx="318.0" cy="144.0" r="2.19" style="--dx:-1.8px;--dy:153.9px;animation-delay:0.06s" />
+<circle class="p" cx="366.0" cy="144.0" r="2.51" style="--dx:-10.2px;--dy:172.6px;animation-delay:0.033s" />
+<circle class="p" cx="318.0" cy="156.0" r="2.5" style="--dx:-108.5px;--dy:142.1px;animation-delay:0.146s" />
+<circle class="p" cx="366.0" cy="156.0" r="2.13" style="--dx:-217.5px;--dy:118.5px;animation-delay:0.125s" />
+<circle class="p" cx="318.0" cy="168.0" r="1.78" style="--dx:-111.6px;--dy:-16.6px;animation-delay:0.11s" />
+<circle class="p" cx="366.0" cy="168.0" r="2.07" style="--dx:229.8px;--dy:5.7px;animation-delay:0.043s" />
+<circle class="p" cx="404.0" cy="96.0" r="2.12" style="--dx:-30.0px;--dy:-191.1px;animation-delay:0.081s" />
+<circle class="p g" cx="416.0" cy="96.0" r="2.16" style="--dx:-214.0px;--dy:-77.7px;animation-delay:0.027s" />
+<circle class="p" cx="428.0" cy="96.0" r="2.11" style="--dx:1.4px;--dy:151.5px;animation-delay:0.193s" />
+<circle class="p" cx="392.0" cy="108.0" r="2.04" style="--dx:-207.4px;--dy:-84.7px;animation-delay:0.228s" />
+<circle class="p" cx="440.0" cy="108.0" r="2.29" style="--dx:-141.3px;--dy:-120.7px;animation-delay:0.128s" />
+<circle class="p" cx="392.0" cy="120.0" r="2.54" style="--dx:-181.5px;--dy:56.0px;animation-delay:0.12s" />
+<circle class="p" cx="440.0" cy="120.0" r="1.86" style="--dx:-75.7px;--dy:-229.3px;animation-delay:0.236s" />
+<circle class="p" cx="392.0" cy="132.0" r="1.74" style="--dx:-234.1px;--dy:-91.9px;animation-delay:0.21s" />
+<circle class="p" cx="404.0" cy="132.0" r="1.84" style="--dx:127.3px;--dy:122.0px;animation-delay:0.018s" />
+<circle class="p" cx="416.0" cy="132.0" r="2.5" style="--dx:188.6px;--dy:93.3px;animation-delay:0.196s" />
+<circle class="p" cx="428.0" cy="132.0" r="1.74" style="--dx:122.8px;--dy:179.4px;animation-delay:0.165s" />
+<circle class="p" cx="440.0" cy="132.0" r="2.55" style="--dx:189.1px;--dy:-171.3px;animation-delay:0.055s" />
+<circle class="p g" cx="392.0" cy="144.0" r="2.43" style="--dx:-146.9px;--dy:109.2px;animation-delay:0.247s" />
+<circle class="p" cx="440.0" cy="144.0" r="1.94" style="--dx:92.3px;--dy:148.4px;animation-delay:0.129s" />
+<circle class="p" cx="392.0" cy="156.0" r="1.62" style="--dx:52.8px;--dy:148.7px;animation-delay:0.181s" />
+<circle class="p" cx="440.0" cy="156.0" r="1.93" style="--dx:-166.0px;--dy:-58.7px;animation-delay:0.005s" />
+<circle class="p" cx="392.0" cy="168.0" r="2.59" style="--dx:-133.0px;--dy:-131.2px;animation-delay:0.016s" />
+<circle class="p" cx="440.0" cy="168.0" r="1.87" style="--dx:61.1px;--dy:-248.4px;animation-delay:0.026s" />
+<circle class="p" cx="466.0" cy="96.0" r="1.73" style="--dx:219.9px;--dy:55.8px;animation-delay:0.068s" />
+<circle class="p" cx="478.0" cy="96.0" r="1.86" style="--dx:-217.9px;--dy:115.8px;animation-delay:0.205s" />
+<circle class="p" cx="490.0" cy="96.0" r="2.3" style="--dx:146.5px;--dy:200.0px;animation-delay:0.143s" />
+<circle class="p" cx="502.0" cy="96.0" r="2.03" style="--dx:100.4px;--dy:63.2px;animation-delay:0.172s" />
+<circle class="p" cx="466.0" cy="108.0" r="2.4" style="--dx:225.2px;--dy:110.2px;animation-delay:0.159s" />
+<circle class="p g" cx="514.0" cy="108.0" r="2.46" style="--dx:206.2px;--dy:119.7px;animation-delay:0.017s" />
+<circle class="p" cx="466.0" cy="120.0" r="2.53" style="--dx:-154.1px;--dy:46.1px;animation-delay:0.138s" />
+<circle class="p" cx="514.0" cy="120.0" r="1.84" style="--dx:-14.5px;--dy:128.6px;animation-delay:0.132s" />
+<circle class="p" cx="466.0" cy="132.0" r="1.8" style="--dx:103.7px;--dy:85.2px;animation-delay:0.013s" />
+<circle class="p" cx="478.0" cy="132.0" r="1.89" style="--dx:-59.1px;--dy:144.1px;animation-delay:0.19s" />
+<circle class="p" cx="490.0" cy="132.0" r="1.62" style="--dx:-136.7px;--dy:-0.1px;animation-delay:0.087s" />
+<circle class="p" cx="502.0" cy="132.0" r="2.15" style="--dx:-0.3px;--dy:112.3px;animation-delay:0.183s" />
+<circle class="p" cx="466.0" cy="144.0" r="1.71" style="--dx:67.3px;--dy:168.3px;animation-delay:0.234s" />
+<circle class="p" cx="490.0" cy="144.0" r="2.43" style="--dx:73.4px;--dy:-158.7px;animation-delay:0.124s" />
+<circle class="p" cx="466.0" cy="156.0" r="2.58" style="--dx:-145.6px;--dy:115.8px;animation-delay:0.172s" />
+<circle class="p" cx="502.0" cy="156.0" r="2.24" style="--dx:-129.2px;--dy:196.1px;animation-delay:0.177s" />
+<circle class="p g" cx="466.0" cy="168.0" r="1.73" style="--dx:-133.9px;--dy:91.4px;animation-delay:0.014s" />
+<circle class="p" cx="514.0" cy="168.0" r="1.76" style="--dx:199.7px;--dy:95.1px;animation-delay:0.064s" />
+<circle class="p" cx="540.0" cy="96.0" r="2.27" style="--dx:203.7px;--dy:119.6px;animation-delay:0.218s" />
+<circle class="p" cx="552.0" cy="96.0" r="2.06" style="--dx:-29.2px;--dy:143.4px;animation-delay:0.073s" />
+<circle class="p" cx="564.0" cy="96.0" r="2.56" style="--dx:97.1px;--dy:147.9px;animation-delay:0.066s" />
+<circle class="p" cx="576.0" cy="96.0" r="2.57" style="--dx:189.2px;--dy:-32.9px;animation-delay:0.061s" />
+<circle class="p" cx="588.0" cy="96.0" r="1.98" style="--dx:-59.8px;--dy:152.2px;animation-delay:0.0s" />
+<circle class="p" cx="564.0" cy="108.0" r="2.1" style="--dx:-183.1px;--dy:29.4px;animation-delay:0.05s" />
+<circle class="p" cx="564.0" cy="120.0" r="2.0" style="--dx:149.6px;--dy:4.7px;animation-delay:0.022s" />
+<circle class="p" cx="564.0" cy="132.0" r="1.83" style="--dx:109.5px;--dy:29.3px;animation-delay:0.076s" />
+<circle class="p" cx="564.0" cy="144.0" r="2.26" style="--dx:-162.7px;--dy:-97.0px;animation-delay:0.188s" />
+<circle class="p g" cx="564.0" cy="156.0" r="1.93" style="--dx:-51.3px;--dy:-236.4px;animation-delay:0.097s" />
+<circle class="p" cx="540.0" cy="168.0" r="2.24" style="--dx:131.8px;--dy:-12.7px;animation-delay:0.181s" />
+<circle class="p" cx="552.0" cy="168.0" r="2.23" style="--dx:226.4px;--dy:63.9px;animation-delay:0.223s" />
+<circle class="p" cx="564.0" cy="168.0" r="2.12" style="--dx:-23.5px;--dy:-230.6px;animation-delay:0.035s" />
+<circle class="p" cx="576.0" cy="168.0" r="2.43" style="--dx:-235.2px;--dy:-6.5px;animation-delay:0.201s" />
+<circle class="p" cx="588.0" cy="168.0" r="2.29" style="--dx:-210.7px;--dy:-122.9px;animation-delay:0.171s" />
+</svg>

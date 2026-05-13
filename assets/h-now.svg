@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 44" width="720" height="44" role="img" aria-label="section: now">
+  <defs>
+    <style><![CDATA[
+      .mono { font-family: 'JetBrains Mono','Fira Code','SF Mono','Menlo','Consolas',monospace; font-size: 15px; }
+      .bg     { fill: #0d1117; }
+      .border { fill: none; stroke: #21262d; stroke-width: 1; }
+      .prompt { fill: #7ee787; }
+      .text   { fill: #c9d1d9; }
+      .dim    { fill: #6e7681; }
+      .accent { fill: #79c0ff; }
+      .flag   { fill: #f0b72f; }
+    ]]></style>
+  </defs>
+  <rect class="bg"     x="0.5" y="0.5" width="719" height="43" rx="6" />
+  <rect class="border" x="0.5" y="0.5" width="719" height="43" rx="6" />
+  <text class="mono" x="18" y="28">
+    <tspan class="prompt">zashari@dev</tspan><tspan class="dim">:</tspan><tspan class="accent">~/now</tspan><tspan class="dim"> ❯ </tspan><tspan class="text">tail </tspan><tspan class="flag">-f</tspan><tspan class="text"> </tspan><tspan class="accent">timeline.log</tspan>
+  </text>
+  <text class="mono dim" x="702" y="28" text-anchor="end">// what's running</text>
+</svg>
