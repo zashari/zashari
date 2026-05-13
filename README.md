@@ -8,39 +8,9 @@
 
 ---
 
-<img src="./assets/h-whoami.svg" alt="~/whoami ❯ cat about.txt" width="100%" />
+<img src="./assets/sec-whoami.svg" alt="zashari@dev — whoami" width="100%" />
 
-```yaml
-name      : Andi Izzat Zaky Ashari
-role      : AI Engineer  ·  Software Engineer  ·  Software Architect
-currently : Full-Stack Software Engineer  @  marketbetter.ai
-            Software Architect            @  Ashari Tech
-location  : Bandung, Indonesia  ·  remote
-education : B.Sc. Computer Science, BINUS University (2021 – 2025)
-focus     : AI/ML  ·  full-stack  ·  cloud infrastructure  ·  LLM platforms
-```
-
-<img src="./assets/h-stack.svg" alt="~/stack ❯ ls --grouped" width="100%" />
-
-```
-┌─ languages ──────────────────────────────────────────────────┐
-│  TypeScript    JavaScript    Python    Go    SQL    R        │
-├─ frontend ───────────────────────────────────────────────────┤
-│  React    Next.js    Tailwind CSS    HTML / CSS              │
-├─ runtime · backend ──────────────────────────────────────────┤
-│  Node.js    Bun    Elysia.js    REST    Socket.IO / WS       │
-├─ ai · ml ────────────────────────────────────────────────────┤
-│  TensorFlow    PyTorch    OpenAI    Gemini    MCP            │
-│  Deep Learning    Model Deployment                           │
-├─ data ───────────────────────────────────────────────────────┤
-│  PostgreSQL    MongoDB    Supabase    Redis                  │
-├─ cloud · infra ──────────────────────────────────────────────┤
-│  AWS (Lambda · S3 · EC2)    GCP    Cloudflare (R2 · Tunnel)  │
-│  Docker / Docker Swarm    Terraform    GitHub Actions        │
-└──────────────────────────────────────────────────────────────┘
-```
-
-<img src="./assets/h-website.svg" alt="~/website ❯ curl -I zashari.website" width="100%" />
+<img src="./assets/sec-stack.svg" alt="zashari@dev — stack" width="100%" />
 
 <a href="https://zashari.website" target="_blank" rel="noopener noreferrer" title="visit zashari.website (opens in new tab)">
   <img src="./assets/website-frame.svg" alt="zashari.website — visit live site" width="100%" />
