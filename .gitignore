@@ -1,0 +1,17 @@
+# accidental venv-like installs from `py -m ensurepip --upgrade`
+Lib/
+Include/
+Scripts/
+pyvenv.cfg
+
+# python build / cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# stray pip executables that landed in scripts/
+scripts/pip*.exe
+scripts/python*.exe
