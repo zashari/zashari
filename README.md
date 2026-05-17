@@ -6,7 +6,7 @@
 
 ---
 
-<img src="./assets/sec-whoami.svg" alt="zashari@dev — whoami" width="100%" />
+<img src="./assets/sec-whoami-v2.svg" alt="zashari@dev — whoami" width="100%" />
 
 <img src="./assets/sec-stack.svg" alt="zashari@dev — stack" width="100%" />
 
