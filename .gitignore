@@ -15,3 +15,9 @@ venv/
 # stray pip executables that landed in scripts/
 scripts/pip*.exe
 scripts/python*.exe
+
+# IDE screenshot drops in repo root (assets/ images are intentional)
+/image.png
+/image*.png
+/Untitled*.png
+/screenshot*.png
